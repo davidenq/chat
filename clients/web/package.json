@@ -1,0 +1,27 @@
+{
+  "name": "chat-client",
+  "version": "0.0.0",
+  "description": "A simple chat web client",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./",
+    "build": "rollup -c"
+  },
+  "author": "David Nuñez <davip@live.com - david.nunez.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "babel-preset-env": "^1.7.0",
+    "http-server": "^0.12.1",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "uuid": "^7.0.2"
+  }
+}

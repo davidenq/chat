@@ -1,0 +1,85 @@
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  background: #C5DDEB;
+}
+
+.block {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.block__body {
+  background: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 600px;
+}
+
+.block__title {
+  margin: 20px 0;
+
+}
+.block__title > h1{
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.block .block_information {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 250px;
+}
+
+.block .block_information > * {
+  margin: 10px 0;
+}
+
+button {
+  background: #202020;
+  border: 1px solid gray;
+  color: white;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+#container-chat {
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 80%;
+  width: 90%;
+}
+.chat-history {
+  height: 100%;
+  width: 100%;
+  border: 1px solid gray;
+  margin: 10px 0;
+}
+.block__inputs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.block__input {
+  width: 100%;
+}
+.user-message {
+  font-size: 12px;
+  font-family:Montserrat, Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: block;
+}

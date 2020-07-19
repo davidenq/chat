@@ -1,0 +1,41 @@
+version: '3'
+services:
+  console:
+    privileged: true
+    build:
+      context: .
+      dockerfile: ./clients/console/Dockerfile
+    command: console
+    env_file: .env
+    ports:
+      - 5000:5000'
+    networks:
+      - main
+  web:
+    privileged: true
+    build:
+      context: .
+      dockerfile: ./clients/web/Dockerfile
+    command: web
+    env_file: .env
+    ports:
+      - '0.0.0.0:5000:5000'
+    networks:
+      - main
+  server:
+    privileged: true
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    command: server
+    env_file: .env
+    ports:
+      - '0.0.0.0:5000:5000'
+    networks:
+      - main
+volumes:
+  oauth2data:
+networks:
+  main:
+    external:
+      name: gaia_main
